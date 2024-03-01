@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Implementasi Form</h1>
+    <form>
+      <table>
+        <tr>
+          <td><label for="firstname">Firstname</label></td>
+          <td>
+            <input type="text" name="firstname" placeholder="firstname" />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="lastname">Lastname</label></td>
+          <td>
+            <input
+              type="text"
+              name="lastname"
+              value="Faridz"
+              placeholder="lastname"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="gender">Jenis Kelamin</label></td>
+          <td>
+            <input type="radio" name="gender" checked />Laki-Laki <br />
+            <input type="radio" name="gender" />Perempuan
+          </td>
+        </tr>
+        <tr>
+          <td><label for="hobi">Hobi</label></td>
+          <td>
+            <select name="hobi" id="">
+              <option value="game">Game</option>
+              <option value="membaca">Membaca</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="lahir">Tanggal Lahir</label></td>
+          <td><input type="date" name="lahir" /></td>
+        </tr>
+        <tr>
+          <td><label for="message">Deskripsi</label></td>
+          <td>
+            <textarea name="message" cols="30" rows="10">
+  Isi deskripsi</textarea
+            >
+          </td>
+        </tr>
+        <tr>
+          <td><label for="favoritecolor">Favorite Color</label></td>
+          <td>
+            <input
+              type="text"
+              list="colors"
+              id="favcolor"
+              name="favoritecolor"
+            />
+            <datalist id="colors">
+              <option value="Blue"></option>
+              <option value="Green"></option>
+              <option value="Pink"></option>
+              <option value="Purple"></option>
+            </datalist>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            I would like to receive
+            <input type="number" name="quantity" min="1" max="5" /> copies of
+            The HTML5 Herald
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="checkbox" value="setuju" id="setuju" />
+            <label for="setuju">Setuju</label>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2"><input type="submit" value="Submit" /></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
